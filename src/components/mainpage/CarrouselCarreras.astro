@@ -1,10 +1,13 @@
 ---
-// import Welcome from '../components/Welcome.astro';
-// import energia from '../assets/images/home/energia.jpg';
-// import mecatronica from '../assets/images/home/mecatronica.jpg';
 import negocios from '../../assets/images/home/negocios.jpg'
 import mecatronica from '../../assets/images/home/mecatronica.jpg'
 import sistemas from  '../../assets/images/home/sistemas.jpg'
+import aeronautica from  '../../assets/images/home/aeronautica.jpg'
+import bioclimatica from  '../../assets/images/home/bioclimatica.jpg'
+import ciencias from  '../../assets/images/home/ciencias.jpg'
+import energia from  '../../assets/images/home/energia.jpg'
+import automotriz from  '../../assets/images/home/automotriz.jpg'
+import maestria from  '../../assets/images/home/maestria.jpg'
 import Card from '../shared/card.astro';
 ---
   <!-- component -->
@@ -49,8 +52,41 @@ import Card from '../shared/card.astro';
         description="Diseña, desarrolla e implementa sistemas informáticos en organizaciones, utilizando tecnologías de información y comunicación para asegurar la eficiencia en los procesos productivos.">
         </Card>
     </div>
-    <div class="relative w-full h-full flex bg-white"></div>
-    <div class="relative w-full h-full flex bg-white"></div>
+    <div class="relative w-full h-full flex bg-white gap-4 py-9 place-content-center">
+      <Card 
+        title="Ingeniería en Energía "
+        image={energia.src}
+        description="Busca innovar soluciones para el uso eficiente de fuentes de energía, evaluando y creando tecnologías avanzadas para el desarrollo sostenible">
+        </Card>
+      <Card 
+        title="Ingeniería Mecánica Automotriz "
+        image={automotriz.src}
+        description="Diseña sistemas mecánicos para transformar materia, mejorar y mantener sectores industriales como automotriz, ferrocarril, médico y servicios, desarrollando productos innovadores y aplicaciones tecnológicas de vanguardia.">
+        </Card>
+      <Card 
+        title="Arquitectura Bioclimática"
+        image={bioclimatica.src}
+        description="Diseña sistemas mecánicos para transformar materia, mejorar y mantener sectores industriales como automotriz, ferrocarril, médico y servicios, desarrollando productos innovadores y aplicaciones tecnológicas de vanguardia.">
+        </Card>
+
+    </div>
+    <div class="relative w-full h-full flex bg-white gap-4 py-9 place-content-center">
+      <Card 
+        title="Ingeniería Aeronáutica"
+        image={aeronautica.src}
+        description="Forma profesionales para investigar, diseñar, construir, mantener y gestionar sistemas y componentes de aeronaves y administrar la infraestructura del sector aeronáutico.">
+        </Card>
+      <Card 
+        title="Maestría en Enseñanza de las Ciencias"
+        image={ciencias.src}
+        description="Profesores competentes en diseñar e implementar ambientes de aprendizaje científico - tecnológico para desarrollar competencias en Matemáticas y física, utilizando metodologías de investigación educativa.">
+        </Card>
+      <Card 
+        title="Maestría en Ciencias en Ingeniería"
+        image={maestria.src}
+        description="Aplica la educación basada en competencias para la investigación y el desarrollo de proyectos.">
+        </Card>
+    </div>
   </div>
 
   <div
