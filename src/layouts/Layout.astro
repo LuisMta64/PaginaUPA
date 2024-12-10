@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import Navbar from '../components/layout/navbar.astro';
+import Topbar from '../components/layout/topbar.astro';
 ---
 <!doctype html>
 <html lang="en">
@@ -11,11 +13,11 @@ import '../styles/global.css';
 		<title>Universidad Politecnica de Aguascalientes</title>
 	</head>
 	<body>
+		<Topbar></Topbar>
+		<Navbar></Navbar>
 		<slot/>
 	</body>
 </html>
-
-
 
 <style>
 	html,
