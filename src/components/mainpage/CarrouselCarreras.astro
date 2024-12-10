@@ -1,14 +1,16 @@
 ---
-import negocios from '../../assets/images/home/negocios.jpg'
+import aeronautica from '../../assets/images/home/aeronautica.jpg'
+import automotriz from '../../assets/images/home/automotriz.jpg'
+import bioclimatica from '../../assets/images/home/bioclimatica.jpg'
+import ciencias from '../../assets/images/home/ciencias.jpg'
+import electronica from '../../assets/images/home/electronica.jpg'
+import energia from '../../assets/images/home/energia.jpg'
+import industrial from '../../assets/images/home/industrial.jpg'
+import maestria from '../../assets/images/home/maestria.jpg'
 import mecatronica from '../../assets/images/home/mecatronica.jpg'
-import sistemas from  '../../assets/images/home/sistemas.jpg'
-import aeronautica from  '../../assets/images/home/aeronautica.jpg'
-import bioclimatica from  '../../assets/images/home/bioclimatica.jpg'
-import ciencias from  '../../assets/images/home/ciencias.jpg'
-import energia from  '../../assets/images/home/energia.jpg'
-import automotriz from  '../../assets/images/home/automotriz.jpg'
-import maestria from  '../../assets/images/home/maestria.jpg'
-import Card from '../shared/card.astro';
+import negocios from '../../assets/images/home/negocios.jpg'
+import sistemas from '../../assets/images/home/sistemas.jpg'
+import Card from '../shared/card.astro'
 ---
   <!-- component -->
 <div class="relative w-screen h-[80vh] bg-slate-800 overflow-hidden">
@@ -37,6 +39,16 @@ import Card from '../shared/card.astro';
   >
     <div class="relative w-full h-full flex bg-white gap-4 py-9 place-content-center">
       <Card 
+        title="Ingeniería en Sistemas computacionales "
+        image={sistemas.src}
+        description="Diseña, desarrolla e implementa sistemas informáticos en organizaciones, utilizando tecnologías de información y comunicación para asegurar la eficiencia en los procesos productivos.">
+        </Card>
+        <Card 
+		title="Ingeniería en Electrónica"
+		image={electronica.src}
+		description="Forma profesionales para diseñar, implementar y mantener sistemas electrónicos en diversos ámbitos, abarcando proyectos industriales y de innovación tecnológica..">
+		</Card>
+      <Card 
         title="Negocios Internacionales"
         image={negocios.src}
         description="Dirige, asesora y ejecuta estrategias gerenciales y de negociación en entornos competitivos e inciertos, utilizando e innovando herramientas administrativas, económicas, financieras y mercadológicas.">
@@ -46,13 +58,14 @@ import Card from '../shared/card.astro';
         image={mecatronica.src}
         description="Desarrolla soluciones integrales con tecnologías avanzadas, creando aplicaciones en sistemas robóticos, mecánicos, de automatización y control, para innovar y mejorar el desarrollo tecnológico en diversos sectores, beneficiando a la sociedad y al medio ambiente.">
         </Card>
-      <Card 
-        title="Ingeniería en Sistemas computacionales "
-        image={sistemas.src}
-        description="Diseña, desarrolla e implementa sistemas informáticos en organizaciones, utilizando tecnologías de información y comunicación para asegurar la eficiencia en los procesos productivos.">
-        </Card>
+      
     </div>
     <div class="relative w-full h-full flex bg-white gap-4 py-9 place-content-center">
+      <Card 
+		title="Ingeniería Industrial"
+		image={industrial.src}
+		description="Profesionistas para planear, diseñar, operar y mejorar procesos productivos, integrando humanos, materiales, información, tecnología, energía y recursos financieros, con una perspectiva creativa, emprendedora y respetuosa del medio ambiente.">
+		</Card>
       <Card 
         title="Ingeniería en Energía "
         image={energia.src}
