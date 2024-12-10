@@ -1,3 +1,8 @@
+---
+import '../styles/global.css';
+import Navbar from '../components/layout/navbar.astro';
+import Topbar from '../components/layout/topbar.astro';
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,10 +10,12 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Universidad Politecnica de Aguascalientes</title>
 	</head>
 	<body>
-		<slot />
+		<Topbar></Topbar>
+		<Navbar></Navbar>
+		<slot/>
 	</body>
 </html>
 

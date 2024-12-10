@@ -1,11 +1,15 @@
 ---
-import Welcome from '../components/Welcome.astro';
+// import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
+import CarrouselCarreras from '../components/mainpage/CarrouselCarreras.astro';
+import CarrouselMain from '../components/mainpage/CarrouselMain.astro';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<CarrouselMain></CarrouselMain>
+	<h2 class="text-center text-4xl font-bold text-gray-800 tracking-tight my-5 overflow-hidden">OFERTA EDUCATIVA</h2>
+	<CarrouselCarreras></CarrouselCarreras>
+	
 </Layout>
