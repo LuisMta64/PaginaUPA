@@ -1,7 +1,9 @@
 ---
 // import Welcome from '../components/Welcome.astro';
+import energia from '../assets/images/home/energia.jpg';
 import mecatronica from '../assets/images/home/mecatronica.jpg';
 import negocios from '../assets/images/home/negocios.jpg';
+import sistemas from '../assets/images/home/sistemas.jpg';
 import Card from '../components/shared/card.astro';
 import Layout from '../layouts/Layout.astro';
 
@@ -25,8 +27,13 @@ import Layout from '../layouts/Layout.astro';
 
 		<Card 
 		title="Ingeniería en Sistemas computacionales "
-		image={negocios.src}
+		image={sistemas.src}
 		description="Diseña, desarrolla e implementa sistemas informáticos en organizaciones, utilizando tecnologías de información y comunicación para asegurar la eficiencia en los procesos productivos.">
+		</Card>
+		<Card 
+		title="Ingeniería en Energía "
+		image={energia.src}
+		description="Busca innovar soluciones para el uso eficiente de fuentes de energía, evaluando y creando tecnologías avanzadas para el desarrollo sostenible">
 		</Card>
 	</div>
 	 
