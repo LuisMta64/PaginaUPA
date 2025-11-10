@@ -1,0 +1,18 @@
+---
+import CardList from '../../components/CardList.astro';
+import Layout from '../../layouts/Layout.astro';
+
+const items = [
+  { title: 'Resultados Enero 2025', description: 'Lista de aspirantes aceptados - enero', href: '/docs/resultados-enero-2025.pdf' },
+  { title: 'Resultados Junio 2025', description: 'Lista de aspirantes aceptados - junio', href: '/docs/resultados-junio-2025.pdf' }
+];
+---
+
+<Layout>
+  <main class="container mx-auto px-4 md:px-20 py-10">
+    <h1 class="text-3xl font-bold mb-4">Resultados de examen</h1>
+    <p class="text-gray-700 mb-6">Consulta los listados oficiales de resultados por convocatoria.</p>
+
+    <CardList items={items} />
+  </main>
+</Layout>

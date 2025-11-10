@@ -1,5 +1,6 @@
 ---
 // import Welcome from '../components/Welcome.astro';
+import educativa from '../assets/images/home/ofertaeducativa.jpg';
 import CarrouselCarreras from '../components/mainpage/CarrouselCarreras.astro';
 import CarrouselMain from '../components/mainpage/CarrouselMain.astro';
 import CarrouselServicios from '../components/mainpage/CarrouselServicios.astro';
@@ -15,4 +16,51 @@ import Layout from '../layouts/Layout.astro';
 	<h2 class="text-center text-4xl font-bold text-gray-800 tracking-tight my-5 overflow-hidden">SERVICIOS UNIVERSITARIOS</h2>
 	<CarrouselServicios></CarrouselServicios>
 	<h2 class="text-center text-4xl font-bold text-gray-800 tracking-tight my-5 overflow-hidden">OFERTA EDUCATIVA</h2>
-</Layout>
+
+	<ul id="mobile-menu" class="hidden md:flex md:space-x-8 text-sm font-medium">
+		<li class="relative group">
+		  <a href="#" class="text-gray-700 hover:text-blue-700">Ingenierias</a>
+		</li>
+
+		<li class="relative group">
+			<a href="#" class="text-gray-700 hover:text-blue-700">Licencituras</a>
+		</li>
+
+		<li class="relative group">
+			<a href="#" class="text-gray-700 hover:text-blue-700">Posgrados</a>
+		</li>
+		
+		<li class="relative group">
+			<a href="#" class="text-gray-700 hover:text-blue-700">Educacion continua</a>
+		</li>
+	</ul>
+	
+	<div class="flex flex-col md:flex-row items-center my-12 md:space-x-12 bg-gray-100 p-8 rounded-xl shadow-lg">
+		<div class="md:w-1/2 text-left space-y-4">
+			<h3 class="text-3xl font-extrabold text-black-600">Las mejores Ingenierías</h3>
+			<p class="text-gray-800 text-lg leading-relaxed">
+				La Universidad Politécnica de Aguascalientes ofrece seis ingenierías:  
+				<strong class="text-black-500">Ingeniería en Energía, Ingeniería en Electrónica, Ingeniería Industrial, Ingeniería en Sistemas Computacionales, Ingeniería Mecánica Automotriz, Ingeniería Mecatrónica, Ingeniería en Negocios Internacionales. </strong>
+				<br><br>
+				La oferta educativa tiene un enfoque tecnológico debido a la alta demanda que existe en el mercado laboral de este tipo de profesionistas.
+			</p>
+			<button class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300 hover:bg-blue-700 hover:shadow-lg">
+				Conoce las Ingenierías
+			</button>
+			
+		</div>
+	
+		<div class="md:w-1/2 flex justify-center">
+			<img src={educativa.src} alt="Oferta educativa" class="w-full max-w-lg rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl" />
+		</div>
+	</div>
+	<h2 class="text-center text-4xl font-bold text-gray-800 tracking-tight my-5 overflow-hidden">ULTIMAS NOTICIAS</h2>
+	<p class="">
+		Conoce las noticias más recientes de nuestra Universidad
+	</p>
+	
+</Layoutay>
+
+<style>
+
+</style>

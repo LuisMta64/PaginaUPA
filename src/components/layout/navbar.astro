@@ -27,77 +27,177 @@ import BannerUPA from '../../assets/images/home/BannerUPA.png';
       <li class="relative group">
         <a href="#" class="text-gray-700 hover:text-blue-700">Admisiones</a>
         <ul class="dropdown">
-          <li><a href="#" class="dropdown-item">Convocatoria 2025</a></li>
-          <li><a href="#" class="dropdown-item">EXANI II</a></li>
-          <li><a href="#" class="dropdown-item">Resultados de examen</a></li>
-          <li><a href="#" class="dropdown-item">Becas</a></li>
-          <li><a href="#" class="dropdown-item">Preguntas frecuentes</a></li>
+          <li><a href="/admisiones/convocatoria-2025" class="dropdown-item">Convocatoria 2025</a></li>
+          <li><a href="/admisiones/exani-ii" class="dropdown-item">EXANI II</a></li>
+          <li><a href="/admisiones/resultados-examen" class="dropdown-item">Resultados de examen</a></li>
+          <li><a href="/admisiones/becas" class="dropdown-item">Becas</a></li>
+          <li><a href="/admisiones/preguntas-frecuentes" class="dropdown-item">Preguntas frecuentes</a></li>
         </ul>
       </li>
 
       <li class="relative group">
-        <a href="#" class="text-gray-700 hover:text-blue-700">Nuestra Universidad</a>
+        <a href="/nuestra-universidad/conocenos" class="text-gray-700 hover:text-blue-700">Nuestra Universidad</a>
         <ul class="dropdown">
-          <li><a href="#" class="dropdown-item">Conócenos</a></li>
-          <li><a href="#" class="dropdown-item">Ordenamientos jurídicos</a></li>
-          <li><a href="#" class="dropdown-item">Información financiera</a></li>
-          <li><a href="#" class="dropdown-item">Prestaciones ISSSSPEA</a></li>
-          <li><a href="#" class="dropdown-item">PIDE 2020-2024</a></li>
-          <li><a href="#" class="dropdown-item">PADES</a></li>
-          <li><a href="#" class="dropdown-item">Comité de valores</a></li>
-          <li><a href="#" class="dropdown-item">Unidad de igualdad</a></li>
-          <li><a href="#" class="dropdown-item">Calidad institucional</a></li>
-          <li><a href="#" class="dropdown-item">Control interno institucional</a></li>
-          <li><a href="#" class="dropdown-item">Periodo electoral</a></li>
-          <li><a href="#" class="dropdown-item">Informes de gestión</a></li>
+          <!-- Conócenos: al hacer hover sobre este ítem se muestra el panel derecho -->
+          <li class="relative has-sub">
+            <a href="/nuestra-universidad/conocenos" class="dropdown-item">Conócenos</a>
+            <div class="subpanel" aria-hidden="true">
+              <ul class="space-y-3 p-4">
+                <li><a href="/nuestra-universidad/bienvenida" class="dropdown-item">Bienvenida</a></li>
+                <li><a href="/nuestra-universidad/mision-vision-valores" class="dropdown-item">Misión, visión y valores</a></li>
+                <li><a href="/nuestra-universidad/modelo-educativo" class="dropdown-item">Modelo educativo</a></li>
+                <li><a href="/nuestra-universidad/infraestructura" class="dropdown-item">Infraestructura</a></li>
+                <li><a href="/nuestra-universidad/historia" class="dropdown-item">Historia</a></li>
+                <li><a href="/nuestra-universidad/logotipo" class="dropdown-item">Logotipo</a></li>
+                <li><a href="/nuestra-universidad/rfc-upa" class="dropdown-item">R.F.C. UPA</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Resto del menú principal (lista principal) -->
+          <li><a href="/nuestra-universidad/ordenamientos-juridicos" class="dropdown-item">Ordenamientos jurídicos</a></li>
+          <li class="relative has-sub">
+            <a href="/nuestra-universidad/informacion-financiera" class="dropdown-item">Información financiera</a>
+            <div class="subpanel" aria-hidden="true">
+              <ul class="space-y-3 p-4">
+                <li><a href="/nuestra-universidad/informes-financieros" class="dropdown-item">Informes financieros</a></li>
+                <li><a href="/nuestra-universidad/informes-tecnico-financieros" class="dropdown-item">Informes técnico/financieros</a></li>
+                <li><a href="/nuestra-universidad/fondo-aportaciones-multiples" class="dropdown-item">Fondo de Aportaciones Múltiples</a></li>
+                <li><a href="/nuestra-universidad/aplicacion-subsidios-federales" class="dropdown-item">Aplicación de Subsidios Federales</a></li>
+                <li><a href="/nuestra-universidad/contraloria-social" class="dropdown-item">Contraloría Social</a></li>
+                <li><a href="/nuestra-universidad/recursos-materiales" class="dropdown-item">Recursos materiales</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="/nuestra-universidad/prestaciones-isssspea" class="dropdown-item">Prestaciones ISSSSPEA</a></li>
+          <li><a href="/nuestra-universidad/pide-2020-2024" class="dropdown-item">PIDE 2020-2024</a></li>
+          <li><a href="/nuestra-universidad/pades" class="dropdown-item">PADES</a></li>
+          <li><a href="/nuestra-universidad/comite-de-valores" class="dropdown-item">Comité de valores</a></li>
+          <li><a href="/nuestra-universidad/unidad-igualdad" class="dropdown-item">Unidad de igualdad</a></li>
+          <li><a href="/nuestra-universidad/calidad-institucional" class="dropdown-item">Calidad institucional</a></li>
+          <li><a href="/nuestra-universidad/control-interno-institucional" class="dropdown-item">Control interno institucional</a></li>
+          <li><a href="/nuestra-universidad/periodo-electoral" class="dropdown-item">Periodo electoral</a></li>
+          <li><a href="/nuestra-universidad/informes-de-gestion" class="dropdown-item">Informes de gestión</a></li>
         </ul>
       </li>
 
       <li class="relative group">
         <a href="#" class="text-gray-700 hover:text-blue-700">Oferta Educativa</a>
         <ul class="dropdown">
-          <li><a href="#" class="dropdown-item">Carreras</a></li>
-          <li><a href="#" class="dropdown-item">Posgrados</a></li>
-          <li><a href="#" class="dropdown-item">Idiomas</a></li>
-          <li><a href="#" class="dropdown-item">Deporte y cultura</a></li>
-          <li><a href="#" class="dropdown-item">Becas universitarias</a></li>
-          <li><a href="#" class="dropdown-item">Educación continua</a></li>
+          <li><a href="/oferta-educativa/carreras" class="dropdown-item">Carreras</a></li>
+          <!-- Posgrados: subpanel con enlaces (aparece al hover) -->
+          <li class="relative has-sub">
+
+            <a href="/oferta-educativa/posgrados" class="dropdown-item">Posgrados</a>
+            <div class="subpanel" aria-hidden="true">
+              <ul class="space-y-3 p-4">
+                <li><a href="/oferta-educativa/posgrados/directorio" class="dropdown-item">Directorio</a></li>
+                <li><a href="/oferta-educativa/posgrados/maestria-ciencias-ingenieria" class="dropdown-item">Maestría en Ciencias en Ingeniería</a></li>
+                <li><a href="/oferta-educativa/posgrados/maestria-ensenanza-ciencias" class="dropdown-item">Maestría en Enseñanza de las Ciencias</a></li>
+                <li><a href="/oferta-educativa/posgrados/actividades-investigacion-2024" class="dropdown-item">Actividades de Investigación 2024</a></li>
+                <li><a href="/oferta-educativa/posgrados/becas-posgrados" class="dropdown-item">Becas posgrados</a></li>
+                <li><a href="/oferta-educativa/posgrados/calendario-escolar-2025-2026" class="dropdown-item">Calendario escolar 2025-2026</a></li>
+                <li><a href="/oferta-educativa/posgrados/normativa" class="dropdown-item">Normativa</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="/oferta-educativa/idiomas" class="dropdown-item">Idiomas</a></li>
+          <li><a href="/oferta-educativa/deporte-y-cultura" class="dropdown-item">Deporte y cultura</a></li>
+          <li><a href="/oferta-educativa/becas-universitarias" class="dropdown-item">Becas universitarias</a></li>
+          <!-- Educación continua: subpanel (aparece al hover) -->
+          <li class="relative has-sub">
+            <a href="/oferta-educativa/educacion-continua" class="dropdown-item">Educación continua</a>
+            <div class="subpanel" aria-hidden="true">
+              <ul class="space-y-3 p-4">
+                <li><a href="/oferta-educativa/educacion-continua/diplomados-cursos-certificaciones" class="dropdown-item">Diplomados, Cursos y Certificaciones</a></li>
+                <li><a href="/oferta-educativa/educacion-continua/buzon-quejas" class="dropdown-item">Buzón de quejas</a></li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </li>
 
       <li class="relative group">
-        <a href="#" class="text-gray-700 hover:text-blue-700">Vinculación</a>
+        <a href="/vinculacion" class="text-gray-700 hover:text-blue-700">Vinculación</a>
         <ul class="dropdown">
-          <li><a href="#" class="dropdown-item">Proceso de vinculación</a></li>
-          <li><a href="#" class="dropdown-item">Servicios tecnológicos</a></li>
-          <li><a href="#" class="dropdown-item">Movilidad académica</a></li>
-          <li><a href="#" class="dropdown-item">Estancias y estadías</a></li>
-          <li><a href="#" class="dropdown-item">Seguimiento a egresados</a></li>
-          <li><a href="#" class="dropdown-item">PIFI</a></li>
-          <li><a href="#" class="dropdown-item">INCUPA</a></li>
-          <li><a href="#" class="dropdown-item">Proyectos empresariales</a></li>
+          <li><a href="/vinculacion/proceso-de-vinculacion" class="dropdown-item">Proceso de vinculación</a></li>
+          <li><a href="/vinculacion/servicios-tecnologicos" class="dropdown-item">Servicios tecnológicos</a></li>
+          <li><a href="/vinculacion/movilidad-academica" class="dropdown-item">Movilidad académica</a></li>
+          <li><a href="/vinculacion/estancias-y-estadias" class="dropdown-item">Estancias y estadías</a></li>
+          <li><a href="/vinculacion/seguimiento-a-egresados" class="dropdown-item">Seguimiento a egresados</a></li>
+          <li><a href="/vinculacion/pifi" class="dropdown-item">PIFI</a></li>
+          <li><a href="/vinculacion/incupa" class="dropdown-item">INCUPA</a></li>
+          <li><a href="/vinculacion/proyectos-empresariales" class="dropdown-item">Proyectos empresariales</a></li>
+        </ul>
+      </li>
+
+      <!-- Nueva pestaña: Servicios Universitarios -->
+      <li class="relative group">
+        <a href="/servicios-universitarios" class="text-gray-700 hover:text-blue-700">Servicios Universitarios</a>
+        <ul class="dropdown">
+          <li><a href="/servicios-universitarios/servicios-escolares" class="dropdown-item">Servicios Escolares</a></li>
+          <li><a href="/servicios-universitarios/siiupa" class="dropdown-item">SIIUPA</a></li>
+          <li><a href="/servicios-universitarios/moodle" class="dropdown-item">Moodle</a></li>
+          <li><a href="/servicios-universitarios/calendario-escolar-2025-2026" class="dropdown-item">Calendario escolar 2025-2026</a></li>
+          <li><a href="/servicios-universitarios/bolsa-de-trabajo" class="dropdown-item">Bolsa de Trabajo</a></li>
+          <li><a href="/servicios-universitarios/informatica" class="dropdown-item">Informática</a></li>
+          <li class="relative has-sub">
+            <a href="/servicios-universitarios/centro-informacion" class="dropdown-item">Centro de Información</a>
+            <div class="subpanel" aria-hidden="true">
+              <ul class="space-y-3 p-4">
+                <li><a href="/servicios-universitarios/centro-informacion/plataforma-elibro" class="dropdown-item">Plataforma eLibro</a></li>
+                <li><a href="/servicios-universitarios/centro-informacion/guia-usuario" class="dropdown-item">Guía del usuario</a></li>
+                <li><a href="/servicios-universitarios/centro-informacion/repositorio-tesis" class="dropdown-item">Repositorio de Tesis</a></li>
+                <li><a href="/servicios-universitarios/centro-informacion/recursos-acceso-abierto" class="dropdown-item">Recursos de acceso abierto</a></li>
+                <li><a href="/servicios-universitarios/centro-informacion/software-codigo-abierto" class="dropdown-item">Software Código-Abierto</a></li>
+                <li><a href="/servicios-universitarios/centro-informacion/mision-vision" class="dropdown-item">Misión y Visión</a></li>
+                <li><a href="/servicios-universitarios/centro-informacion/reglamento-lockers" class="dropdown-item">Reglamento lockers</a></li>
+                <li><a href="/servicios-universitarios/centro-informacion/lineamientos-ci" class="dropdown-item">Lineamientos de C.I.</a></li>
+                <li><a href="/servicios-universitarios/centro-informacion/lineamientos-uso-pantallas" class="dropdown-item">Lineamientos para uso de pantallas</a></li>
+                <li><a href="/servicios-universitarios/centro-informacion/memorias-creacion-literaria" class="dropdown-item">Memorias creación literaria</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="/servicios-universitarios/becas-universitarias" class="dropdown-item">Becas Universitarias</a></li>
+          <li><a href="/servicios-universitarios/shesma" class="dropdown-item">SHESMA</a></li>
+          <li><a href="/servicios-universitarios/transporte" class="dropdown-item">Transporte</a></li>
+          <li><a href="/servicios-universitarios/trabaja-con-nosotros" class="dropdown-item">Trabaja con nosotros</a></li>
+          <li><a href="/servicios-universitarios/sistema-de-pagos" class="dropdown-item">Sistema de pagos</a></li>
+          <li><a href="/servicios-universitarios/servicio-social-comunitario" class="dropdown-item">Servicio Social Comunitario</a></li>
+          <li><a href="/servicios-universitarios/guia-del-foraneo-upa" class="dropdown-item">Guía del foráneo UPA</a></li>
+          <li><a href="/servicios-universitarios/preguntas-frecuentes-servicios" class="dropdown-item">Preguntas frecuentes servicios</a></li>
         </ul>
       </li>
 
     <li class="relative group">
-      <a href="#" class="text-gray-700 hover:text-blue-700">Noticias</a>
+    <a href="/noticias" class="text-gray-700 hover:text-blue-700">Noticias</a>
       <ul class="dropdown">
-        <li><a href="#" class="dropdown-item">Arte y cultura</a></li>
-        <li><a href="#" class="dropdown-item">Logros</a></li>
-        <li><a href="#" class="dropdown-item">Sociedad y política</a></li>
-        <li><a href="#" class="dropdown-item">Vinculación</a></li>
-        <li><a href="#" class="dropdown-item">Estudiantes</a></li>
-        <li><a href="#" class="dropdown-item">Deportes y atletismo</a></li>
-        <li><a href="#" class="dropdown-item">Instalaciones</a></li>
+        <li><a href="/noticias/arte-y-cultura" class="dropdown-item">Arte y Cultura</a></li>
+        <li><a href="/noticias/logros" class="dropdown-item">Logros</a></li>
+        <li><a href="/noticias/sociedad-y-politica" class="dropdown-item">Sociedad y Política</a></li>
+        <li><a href="/noticias/vinculacion" class="dropdown-item">Vinculación</a></li>
+        <li><a href="/noticias/estudiantes" class="dropdown-item">Estudiantes</a></li>
+        <li><a href="/noticias/deportes-y-atletismo" class="dropdown-item">Deportes y Atletismo</a></li>
+        <li><a href="/noticias/instalaciones" class="dropdown-item">Instalaciones</a></li>
       </ul>
     </li>
       <li class="relative group">
-        <a href="#" class="text-gray-700 hover:text-blue-700">Transparencia</a>
+        <a href="/transparencia" class="text-gray-700 hover:text-blue-700">Transparencia</a>
         <ul class="dropdown">
-          <li><a href="#" class="dropdown-item">Obligaciones públicas</a></li>
-          <li><a href="#" class="dropdown-item">Contabilidad gubernamental</a></li>
-          <li><a href="#" class="dropdown-item">DGUTyP (Covenio U006)</a></li>
-          <li><a href="#" class="dropdown-item">DGUTyP (PRODEP)</a></li>
+          <li><a href="/transparencia/obligaciones-publicas" class="dropdown-item">Obligaciones públicas</a></li>
+          <li><a href="/transparencia/contabilidad-gubernamental" class="dropdown-item">Contabilidad gubernamental</a></li>
+          <li><a href="/transparencia/dgutyp-covenio-u006" class="dropdown-item">DGUTyP (Convenio U006)</a></li>
+          <li class="relative has-sub align-left">
+            <a href="/transparencia/dgutyp-prodep" class="dropdown-item">DGUTyP (PRODEP)</a>
+            <div class="subpanel" aria-hidden="true">
+              <ul class="space-y-3 p-4">
+                <li><a href="/transparencia/dgutyp-prodep/prodep" class="dropdown-item">PRODEP</a></li>
+                <li><a href="/transparencia/dgutyp-prodep/ro-prodep-2024" class="dropdown-item">RO PRODEP 2024</a></li>
+                <li><a href="/transparencia/dgutyp-prodep/convocatorias-prodep" class="dropdown-item">Convocatorias PRODEP</a></li>
+                <li><a href="/transparencia/dgutyp-prodep/prodep-2024-pef-art-37" class="dropdown-item">PRODEP 2024, PEF Art. 37</a></li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </li>
     </ul>
@@ -105,8 +205,8 @@ import BannerUPA from '../../assets/images/home/BannerUPA.png';
 </nav>
 
 <script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
+  const menuToggle = document.getElementById('menu-toggle')!;
+  const mobileMenu = document.getElementById('mobile-menu')!;
 
   menuToggle.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
@@ -149,6 +249,39 @@ import BannerUPA from '../../assets/images/home/BannerUPA.png';
 
   .group:hover .dropdown {
     display: block; /* Muestra el menú al pasar el cursor */
+  }
+
+  /* Subpanel que aparece cuando se pasa sobre Conócenos */
+  .dropdown .has-sub {
+    position: relative;
+  }
+
+  .dropdown .subpanel {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    min-width: 240px;
+    background: linear-gradient(135deg, #152a4b, #1a3a63);
+    border-radius: 8px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    z-index: 200;
+  }
+
+  /* Si la subpanel está cerca del borde derecho, abrir hacia la izquierda */
+  .dropdown .has-sub.align-left > .subpanel {
+    left: auto;
+    right: 100%;
+  }
+
+  .dropdown .has-sub:hover > .subpanel {
+    display: block;
+  }
+
+  /* Ajustes visuales para los items dentro del subpanel */
+  .dropdown .subpanel .dropdown-item {
+    padding: 12px 16px;
+    white-space: nowrap;
   }
 
   /* Animación del gradiente */

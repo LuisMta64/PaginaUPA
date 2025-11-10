@@ -1,0 +1,26 @@
+---
+/**
+ * Props: { items?: { title: string, description?: string, href?: string }[] }
+ */
+const { items = [] } = Astro.props;
+---
+
+<div class="grid gap-6 md:grid-cols-2">
+  {items.length === 0 ? (
+    <p class="text-gray-600">No hay items para mostrar.</p>
+  ) : (
+    items.map((i) => (
+      <article class="bg-white p-6 rounded-lg shadow" key={i.title}>
+        <h3 class="text-xl font-semibold mb-2">{i.title}</h3>
+        {i.description ? <p class="text-gray-600 mb-4">{i.description}</p> : null}
+        {i.href ? (
+          <a class="inline-block bg-blue-600 text-white px-4 py-2 rounded" href={i.href}>
+            Ver / Descargar
+          </a>
+        ) : (
+          <span class="inline-block bg-gray-200 px-3 py-1 rounded text-sm">Sin enlace</span>
+        )}
+      </article>
+    ))
+  )}
+</div>

@@ -1,0 +1,23 @@
+---
+/**
+ * Props: { items?: { question: string, answer: string }[] }
+ */
+const { items = [] } = Astro.props;
+---
+
+<section class="space-y-3" aria-label="Preguntas frecuentes">
+  {items.length === 0 ? (
+    <p class="text-gray-600">No hay preguntas aún.</p>
+  ) : (
+    items.map((it) => (
+      <details class="bg-white p-4 rounded-lg shadow" key={it.question}>
+        <summary class="font-semibold cursor-pointer">{it.question}</summary>
+        <div class="mt-2 text-gray-700">{it.answer}</div>
+      </details>
+    ))
+  )}
+</section>
+
+<style>
+  details[open] summary::marker { display: none; }
+</style>

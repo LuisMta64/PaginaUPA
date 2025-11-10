@@ -1,0 +1,18 @@
+---
+import CardList from '../../components/CardList.astro';
+import Layout from '../../layouts/Layout.astro';
+
+const items = [
+  { title: 'Convocatoria oficial 2025', description: 'Versión oficial publicada.', href: '/docs/convocatoria-2025.pdf' },
+  { title: 'Requisitos y fechas', description: 'Resumen de requisitos y calendario.', href: '/docs/convocatoria-2025-requisitos.pdf' }
+];
+---
+
+<Layout>
+  <main class="container mx-auto px-4 md:px-20 py-10">
+    <h1 class="text-3xl font-bold mb-4">Convocatoria 2025</h1>
+    <p class="text-gray-700 mb-6">Aquí encontrarás la convocatoria completa y documentos relacionados.</p>
+
+    <CardList items={items} />
+  </main>
+</Layout>
